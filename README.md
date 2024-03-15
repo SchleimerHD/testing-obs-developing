@@ -170,3 +170,4 @@ To use code signing on GitHub Actions, the certificate and associated informatio
 * To also enable notarization on GitHub Action runners, the following repository secrets are required:
     * `MACOS_NOTARIZATION_USERNAME`: Your Apple Developer account's _Apple ID_
     * `MACOS_NOTARIZATION_PASSWORD`: Your Apple Developer account's _generated app password_
+
