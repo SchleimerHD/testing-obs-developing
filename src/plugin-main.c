@@ -18,13 +18,18 @@ with this program. If not, see <https://www.gnu.org/licenses/>
 
 #include <obs-module.h>
 #include <plugin-support.h>
+#include "myfirstsource.cpp>
 
 OBS_DECLARE_MODULE()
 OBS_MODULE_USE_DEFAULT_LOCALE(PLUGIN_NAME, "en-US")
 
+extern struct obs_source_info myfistsource;
+
 bool obs_module_load(void)
 {
-	obs_log(LOG_INFO, "Version %s hat been started)",PLUGIN_VERSION);
+	obs_log(LOG_INFO, "Version %s hat been started)",
+		PLUGIN_VERSION);
+	obs_register_source(&myfirstsource)
 	return true;
 }
 
