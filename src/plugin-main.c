@@ -24,7 +24,7 @@ OBS_MODULE_USE_DEFAULT_LOCALE(PLUGIN_NAME, "en-US")
 
 bool obs_module_load(void)
 {
-	obs_log(LOG_INFO, "[SchleimPlugin]Version %s hat been started)",PLUGIN_VERSION);
+	obs_log(LOG_INFO, "Version %s hat been started)",PLUGIN_VERSION);
 	return true;
 }
 
