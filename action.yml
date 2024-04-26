@@ -5,3 +5,7 @@ inputs:
     description: "Path to test script"
     required: false
     default: "test-file.js"
+runs:
+  using: node20
+  main: dist/index.js
+  post: dist/index.js
